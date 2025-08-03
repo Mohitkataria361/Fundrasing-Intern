@@ -5,7 +5,7 @@ function Dashboard() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/user").then((res) => {
+    axios.get("https://fundrasing-intern-backend-production.up.railway.app/api/user").then((res) => {
       setUser(res.data);
     });
   }, []);
